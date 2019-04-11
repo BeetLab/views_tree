@@ -43,10 +43,10 @@ class ViewFactory {
     }
     
     func generateForPointInsie() -> UIView {
-        let A = UIView(id: "A", pointInside: false)
-        let B = UIView(id: "B", pointInside: true)
-        let C = UIView(id: "C", pointInside: false)
-        let D = UIView(id: "D", pointInside: true)
+        let A = UIView(id: "A", pointInside: true)
+        let B = UIView(id: "B", pointInside: false)
+        let C = UIView(id: "C", pointInside: true)
+        let D = UIView(id: "D", pointInside: false)
         
         A.subviews.append(B)
         B.subviews.append(contentsOf: [D, C])
